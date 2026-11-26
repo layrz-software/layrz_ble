@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - uses: goldenm-software/layrz-actions/.github/actions/check-dart@v1
+      - uses: layrz-software/layrz-actions/.github/actions/check-dart@v1
         with:
           flutter-version: "3.47.4"
           run-tests: false
@@ -28,7 +28,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: goldenm-software/layrz-actions/.github/actions/changelog@v1
+      - uses: layrz-software/layrz-actions/.github/actions/changelog@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           post-comment: true
